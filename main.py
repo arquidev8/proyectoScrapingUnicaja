@@ -127,10 +127,10 @@ driver = webdriver.Chrome()
 
 
 # Lee el archivo Excel y obtiene los URLs de la columna "Referencia"
-df = pd.read_excel('Inmueblesdisponibles20-03-2023.xlsx', sheet_name='InmueblesVentaConApis', usecols=['Enlace Ficha Comercial Portal Inmobiliario'])
+df = pd.read_excel('Inmueblesdisponibles16-08-2023.xlsx', sheet_name='InmueblesVentaConApis', usecols=['enlace'])
 
 # Convierte los URLs en una lista
-url_list = df['Enlace Ficha Comercial Portal Inmobiliario'].tolist()
+url_list = df['enlace'].tolist()
 
 # Lista para almacenar los datos extraídos de todas las páginas
 data = []
